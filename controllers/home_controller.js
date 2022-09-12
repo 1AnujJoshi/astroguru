@@ -14,23 +14,31 @@ module.exports.getData = function (req, res) {
   var birthDetails = 'birth_details';
 
   var dateObj = new Date(req.body.date);
-  req.body.month = dateObj.getMonth() + 1; //months from 1-12
-  req.body.day = dateObj.getDate();
-  req.body.year = dateObj.getFullYear();
-  req.body.minute = dateObj.getMinutes();
-  req.body.hour = dateObj.getHours();
+  // req.body.month = dateObj.getMonth() + 1; //months from 1-12
+  // req.body.day = parseInt(dateObj.getDate());
+  // req.body.year = dateObj.getFullYear();
+  // req.body.minute = dateObj.getMinutes();
+  // req.body.hour = dateObj.getHours();
+  var month = dateObj.getMonth() + 1; //months from 1-12
+  var day = parseInt(dateObj.getDate());
+  var year = dateObj.getFullYear();
+  var minute = dateObj.getMinutes();
+  var hour = dateObj.getHours();
+  var latitude = req.body.lat;
+  var longitude = req.body.lon;
+  var zone = req.body.zone;
 
   // call horoscope apis
   client.call(
     astroDetails,
-    req.body.day,
-    req.body.month,
-    req.body.year,
-    req.body.hour,
-    req.body.minute,
-    req.body.lat,
-    req.body.lon,
-    req.body.zone,
+    day,
+    month,
+    year,
+    hour,
+    minute,
+    latitude,
+    longitude,
+    zone,
     function (error, result) {
       if (error) {
         console.log('Response Error returned!!');
@@ -42,14 +50,14 @@ module.exports.getData = function (req, res) {
 
         client.call(
           birthDetails,
-          req.body.day,
-          req.body.month,
-          req.body.year,
-          req.body.hour,
-          req.body.minute,
-          req.body.lat,
-          req.body.lon,
-          req.body.zone,
+          day,
+          month,
+          year,
+          hour,
+          minute,
+          latitude,
+          longitude,
+          zone,
           function (error, result) {
             if (error) {
               console.log('Response Error returned!!');
