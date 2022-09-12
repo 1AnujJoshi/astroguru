@@ -27,7 +27,7 @@ module.exports.getData = function (req, res) {
   var latitude = req.body.lat;
   var longitude = req.body.lon;
   var zone = req.body.zone;
-
+  console.log(day, 'value of day)');
   // call horoscope apis
   client.call(
     astroDetails,

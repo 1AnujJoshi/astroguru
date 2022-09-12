@@ -42,7 +42,7 @@ var packageHoroData = (
   timezone
 ) => {
   return {
-    day: date,
+    day: parseInt(date),
     month: month,
     year: year,
     hour: hour,
