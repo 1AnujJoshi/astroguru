@@ -1,0 +1,21 @@
+body {
+  color: rgb(255, 255, 255);
+  background-image: url(https://images-assets.nasa.gov/image/PIA05988/PIA05988~orig.jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  width: 100vw;
+  height: 100vh;
+}
+h1 {
+  color: white;
+}
+
+#container {
+  margin: auto;
+  margin-top: 10%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 25rem;
+  border: 2px solid black;
+}

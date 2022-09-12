@@ -1,0 +1,149 @@
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<div
+  class="accordion accordion-flush mt-4 mx-auto w-50"
+  id="accordionFlushExample"
+>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingOne">
+      <button
+        class="accordion-button collapsed"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#flush-collapseOne"
+        aria-expanded="false"
+        aria-controls="flush-collapseOne"
+      >
+        Astro Details
+      </button>
+    </h2>
+    <div
+      id="flush-collapseOne"
+      class="accordion-collapse collapse"
+      aria-labelledby="flush-headingOne"
+      data-bs-parent="#accordionFlushExample"
+    >
+      <div class="accordion-body">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            <strong>Ascendant</strong>: <%=horoscope.ascendant%>
+          </li>
+          <li class="list-group-item">
+            <strong>Ascendant Lord</strong> : <%=horoscope.ascendant_lord%>
+          </li>
+          <li class="list-group-item">
+            <strong> Varna</strong>: <%=horoscope.Varna%>
+          </li>
+          <li class="list-group-item">
+            <strong>Vashya</strong>: <%=horoscope.Vashya%>
+          </li>
+          <li class="list-group-item">
+            <strong>Yoni</strong>: <%=horoscope.Yoni%>
+          </li>
+          <li class="list-group-item">
+            <strong>Gan</strong>: <%=horoscope.Gan%>
+          </li>
+          <li class="list-group-item">
+            <strong>Nadi</strong>: <%=horoscope.Nadi%>
+          </li>
+          <li class="list-group-item">
+            <strong>SignLord</strong>: <%=horoscope.SignLord%>
+          </li>
+          <li class="list-group-item">
+            <strong>Sign</strong>: <%=horoscope.sign%>
+          </li>
+          <li class="list-group-item">
+            <strong>Naksahtra</strong>: <%=horoscope.Naksahtra%>
+          </li>
+          <li class="list-group-item">
+            <strong> NaksahtraLord</strong>: <%=horoscope.NaksahtraLord%>
+          </li>
+          <li class="list-group-item">
+            <strong>Charan</strong>: <%=horoscope.Charan%>
+          </li>
+          <li class="list-group-item">
+            <strong>Yog</strong>: <%=horoscope.Yog%>
+          </li>
+          <li class="list-group-item">
+            <strong>Karan</strong>: <%=horoscope.Karan%>
+          </li>
+          <li class="list-group-item">
+            <strong>Tithi</strong>: <%=horoscope.Tithi%>
+          </li>
+          <li class="list-group-item">
+            <strong>Yunja</strong>: <%=horoscope.yunja%>
+          </li>
+          <li class="list-group-item">
+            <strong>Tatva</strong>: <%=horoscope.tatva%>
+          </li>
+          <li class="list-group-item">
+            <strong> Name alphabet</strong>: <%=horoscope.name_alphabet%>
+          </li>
+          <li class="list-group-item">
+            <strong>Paya</strong>: <%=horoscope.paya%>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingTwo">
+      <button
+        class="accordion-button collapsed"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#flush-collapseTwo"
+        aria-expanded="false"
+        aria-controls="flush-collapseTwo"
+      >
+        Birth Details
+      </button>
+    </h2>
+    <div
+      id="flush-collapseTwo"
+      class="accordion-collapse collapse"
+      aria-labelledby="flush-headingTwo"
+      data-bs-parent="#accordionFlushExample"
+    >
+      <div class="accordion-body">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            <strong>Year </strong>: <%=horoscope.birth.year%>
+          </li>
+          <li class="list-group-item">
+            <strong>Month </strong>: <%=horoscope.birth.month%>
+          </li>
+          <li class="list-group-item">
+            <strong>Day </strong>: <%=horoscope.birth.day%>
+          </li>
+          <li class="list-group-item">
+            <strong>Hour </strong>: <%=horoscope.birth.hour%>
+          </li>
+          <li class="list-group-item">
+            <strong>Minute </strong>: <%=horoscope.birth.minute%>
+          </li>
+          <li class="list-group-item">
+            <strong> Latitude </strong>: <%=horoscope.birth.latitude%>
+          </li>
+          <li class="list-group-item">
+            <strong> Longitude </strong>: <%=horoscope.birth.longitude%>
+          </li>
+          <li class="list-group-item">
+            <strong> Timezone </strong>: <%=horoscope.birth.timezone%>
+          </li>
+          <li class="list-group-item">
+            <strong> Seconds </strong>: <%=horoscope.birth.seconds%>
+          </li>
+          <li class="list-group-item">
+            <strong> Ayanamsha </strong>: <%=horoscope.birth.ayanamsha%>
+          </li>
+          <li class="list-group-item">
+            <strong> Sunrise </strong>: <%=horoscope.birth.sunrise%>
+          </li>
+          <li class="list-group-item">
+            <strong>Sunset </strong>: <%=horoscope.birth.sunset%>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
